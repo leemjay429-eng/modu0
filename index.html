@@ -594,7 +594,8 @@ if(location.protocol==='file:'||location.hostname.indexOf('github.io')>-1){
   .contents_div .sn27-fig119{ margin-bottom:-1.7143%; }
   .contents_div .sn27-card{ border-radius:16px; }
   .contents_div .sn27-box > .sn27-row{ gap:9px; padding:11px 0; }
-  .contents_div .sn27-lb{ margin-top:calc((var(--fs-info) * 1.5 - var(--lb-h)) / 2); }   /* 라벨 세로 중심을 옆 글줄 중심에 맞춤 */
+  .contents_div .sn27-box > .sn27-row:not(.sn27-row--tel) > dd,
+  .contents_div .sn27-tel-tx{ position:relative; top:-3px; }
   .contents_div .sn27-foot-title{ line-height:1.62; letter-spacing:-0.03em; white-space:nowrap; }
   .contents_div .sn27-foot-title em{ white-space:normal; }
   .contents_div .sn27-tags{ gap:4px 10px; margin-top:22px; }
@@ -621,6 +622,7 @@ if(location.protocol==='file:'||location.hostname.indexOf('github.io')>-1){
   .contents_div .sn27-wrap{
     --band:40px;
     --card-py:19px; --card-px:14px;
+    --lb-h:18.7px; --lb-px:7.7px; --fs-label:11px;   /* 캡슐 1.1배 */
   }
   .contents_div .sn27-warn{ padding-bottom:38px; }
   .contents_div .sn27-tags{ margin-top:32px; }
@@ -796,7 +798,7 @@ if(location.protocol==='file:'||location.hostname.indexOf('github.io')>-1){
     <div class="sn27-head">
       <p class="sn27-kicker">119 이송 지원 서비스</p>
       <h2 class="sn27-h2">거동 불편 수험생도<span class="sn27-br sn27-br--mo"></span> 꼼꼼하게 챙깁니다</h2>
-      <p class="sn27-lead">장애나 거동 불편으로 도움이 필요한<span class="sn27-br sn27-br--m420"></span> 수험생의 이동 편의를 위해 119가 함께합니다.<span class="sn27-br sn27-br--web"></span><span class="sn27-br sn27-br--m420"></span> 광주권역 이동 불편 수험생이라면<span class="sn27-br sn27-br--m420"></span> <strong>‘119 이송 지원 서비스’</strong>를 신청하세요.<span class="sn27-br sn27-br--web"></span><span class="sn27-br sn27-br--m420"></span> 시험 후 귀가까지 안전하게 책임집니다.</p>
+      <p class="sn27-lead">장애나 거동 불편으로 도움이 필요한 수험생의 이동 편의를 위해 119가 함께합니다.<span class="sn27-br sn27-br--web"></span> 광주권역 이동 불편 수험생이라면 <strong>‘119 이송 지원 서비스’</strong>를 신청하세요.<span class="sn27-br sn27-br--web"></span> 시험 후 귀가까지 안전하게 책임집니다.</p>
     </div>
     <div class="sn27-fig119">
       <img src="img/119.webp" width="600" height="220" loading="lazy" decoding="async" alt="119 구급차 옆에서 모자를 쓴 강아지 캐릭터가 손을 흔드는 모습">
@@ -813,7 +815,7 @@ if(location.protocol==='file:'||location.hostname.indexOf('github.io')>-1){
         </div>
         <div class="sn27-row sn27-row--tel">
           <dt class="sn27-lb">신청방법</dt>
-          <dd>인근 소방서에 전화 접수
+          <dd><span class="sn27-tel-tx">인근 소방서에 전화 접수</span>
             <ul class="sn27-tels">
               <li><b>동부소방서</b><a href="tel:062-613-8472" aria-label="동부소방서 전화 062-613-8472">613-8472~3</a></li>
               <li><b>서부소방서</b><a href="tel:062-613-8572" aria-label="서부소방서 전화 062-613-8572">613-8572~3</a></li>

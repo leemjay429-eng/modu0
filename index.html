@@ -434,7 +434,7 @@ if(location.protocol==='file:'||location.hostname.indexOf('github.io')>-1){
 }
 .contents_div .sn27-warn::before{
   content:''; position:absolute; left:50%; top:-12px; width:96px; height:24px; margin-left:-48px;
-  background:rgba(255,255,255,.6); box-shadow:0 1px 2px rgba(16,26,90,.15); transform:rotate(-3deg);
+  background:rgba(201,210,246,.92); box-shadow:0 1px 3px rgba(16,26,90,.22); transform:rotate(-3deg);
 }
 .contents_div .sn27-warn .sn27-h3{ color:#fff; display:flex; align-items:center; justify-content:center; gap:10px; margin-bottom:16px; }
 .contents_div .sn27-warn .sn27-h3::before{
@@ -526,8 +526,8 @@ if(location.protocol==='file:'||location.hostname.indexOf('github.io')>-1){
 }
 @media (max-width:600px){
   .contents_div .sn27-wrap{
-    --fs-foot:clamp(13.5px, calc(13.5px + (100vw - 375px) * 0.0143), 14px);
-    --fs-foot-em:clamp(19px, calc(19px + (100vw - 375px) * 0.1143), 23px);
+    --fs-foot:clamp(12.5px, calc(12.5px + (100vw - 375px) * 0.0143), 13px);
+    --fs-foot-em:clamp(21.5px, calc(21.5px + (100vw - 375px) * 0.0714), 24px);
     --fs-h3:clamp(16px, calc(16px + (100vw - 375px) * 0.0286), 17px);
     --fs-body:clamp(13.5px, calc(13.5px + (100vw - 375px) * 0.0143), 14px);
     --fs-lead:var(--fs-body); --fs-info:var(--fs-body); --fs-cta:var(--fs-body);
@@ -545,7 +545,7 @@ if(location.protocol==='file:'||location.hostname.indexOf('github.io')>-1){
   .contents_div .sn27-h1,
   .contents_div .sn27-h2{ line-height:1.4; }
   .contents_div .sn27-h3{ line-height:1.5; }
-  .contents_div .sn27-kicker{ padding:0 11px; margin-bottom:10px; line-height:1; font-weight:400; }
+  .contents_div .sn27-kicker{ padding:0 11px; margin-bottom:10px; line-height:1; font-weight:500; }
   .contents_div .sn27-on-blue .sn27-kicker{ color:#1f2f8a; }
   .contents_div .sn27-head{ margin-bottom:22px; }
   .contents_div .sn27-lead{ margin-top:10px; }
@@ -595,7 +595,8 @@ if(location.protocol==='file:'||location.hostname.indexOf('github.io')>-1){
   .contents_div .sn27-foot-title{ line-height:1.62; letter-spacing:-0.03em; white-space:nowrap; }
   .contents_div .sn27-foot-title em{ white-space:normal; }
   .contents_div .sn27-tags{ gap:4px 10px; margin-top:22px; }
-  .contents_div .sn27-tags li{ padding:0; border:0; border-radius:0; background:none; font-weight:400; color:rgba(255,255,255,.45); }
+  .contents_div .sn27-wrap.is-rv .sn27-tags{ opacity:1; transform:none; }   /* 페이지 끝이라 등장 감지 영역에 안 들어옴 → 바로 노출 */
+  .contents_div .sn27-tags li{ padding:0; border:0; border-radius:0; background:none; font-weight:400; color:rgba(255,255,255,.75); }
 }
 @media (max-width:480px){
   .contents_div .sn27-wrap{
@@ -630,10 +631,6 @@ if(location.protocol==='file:'||location.hostname.indexOf('github.io')>-1){
 </style>
 
 <article class="sn27-wrap">
-<!-- TEST: 확인 후 이 줄 삭제 -->
-<div class="jngj-test-spacer" aria-hidden="true" style="height:900px;max-width:800px;margin:auto;display:grid;place-items:center;border:1px solid #cb9;background:linear-gradient(to top right,#0000 calc(50% - 1px),#cb9,#0000 calc(50% + 1px)),linear-gradient(to top left,#0000 calc(50% - 1px),#cb9,#0000 calc(50% + 1px)) #fffdef;font:700 16px sans-serif;color:#7E5E50"><b style="padding:10px 20px;background:#fffdef;border:1px solid #cb9;border-radius:99px">
-  테스트 영역 · 아래로 스크롤 ↓</b></div>
-<!-- TEST: 확인 후 이 줄 삭제  -->
   <!-- 히어로 : 배경(CSS) + 텍스트 레이어 + 요소 레이어 / 원본 1600×1500 그대로 겹침 -->
   <div class="sn27-hero">
     <!-- 텍스트 레이어 (텍스트+키커+별) — 같은 파일을 clip-path로 나눠 씀(요청 1회) -->
@@ -683,7 +680,7 @@ if(location.protocol==='file:'||location.hostname.indexOf('github.io')>-1){
     <span class="sn27-spark sn27-spark--d" aria-hidden="true"></span>
     <span class="sn27-spark sn27-spark--f" aria-hidden="true"></span>
     <h1 class="sn27-h1">달려온 시간만큼 빛날 순간</h1>
-    <p class="sn27-lead">2027학년도 대학수학능력시험이 얼마 남지 않았습니다.<span class="sn27-br sn27-br--web"></span> 여기까지 달려온 것만으로도 이미 충분히 잘해 왔어요.<span class="sn27-br sn27-br--web"></span> 이제 남은 열흘은 잘 자고, 잘 먹고, 마음을 가라앉히는 시간.<span class="sn27-br sn27-br--web"></span> 수험생 여러분의 마지막 컨디션 관리, 모두의전남광주와 함께 챙겨보세요.</p>
+    <p class="sn27-lead">2027학년도 대학수학능력시험이 얼마 남지 않았습니다.<span class="sn27-br sn27-br--web"></span> 여기까지 달려온 것만으로도 이미 충분히 잘해 왔어요.<span class="sn27-br sn27-br--web"></span> 이제 남은 날들은 잘 자고, 잘 먹고, 마음을 가라앉히는 시간.<span class="sn27-br sn27-br--web"></span> 수험생 여러분의 마지막 컨디션 관리, 모두의전남광주와 함께 챙겨보세요.</p>
   </section>
 
   <!-- 1. 통합 후 첫 수능 -->
@@ -699,7 +696,7 @@ if(location.protocol==='file:'||location.hostname.indexOf('github.io')>-1){
         <p class="sn27-board-num"><span class="sn27-badge">응시</span> <strong>3만 1704명<span class="sn27-spark" aria-hidden="true"></span></strong></p>
       </div>
       <div class="sn27-board-exam">
-      <h3 class="sn27-h3">시험지구‧시험실</h3>
+      <h3 class="sn27-h3">시험지구·시험실</h3>
       <dl class="sn27-stats">
         <div class="sn27-stat"><dt>시험지구</dt><dd>광주 1개·전남 7개</dd></div>
         <div class="sn27-stat"><dt>시험장</dt><dd>86개</dd></div>
@@ -719,9 +716,9 @@ if(location.protocol==='file:'||location.hostname.indexOf('github.io')>-1){
       <li class="sn27-tip">
         <div class="sn27-tip-head"><span class="sn27-num" aria-hidden="true">1</span><h3 class="sn27-h3">기상 시간 동기화</h3></div>
         <ul class="sn27-dots">
-          <li>수능 시간표에 맞춰 기상 시간을 미리 조정하세요(1주일 전).</li>
+          <li>수능 1주일 전부터 시간표에 맞춰 기상 시간을 미리 조정하세요.</li>
           <li>공부 시간을 늘리려고 취침을 늦추면 수면 부족이 쌓여 집중력이 떨어져요.</li>
-          <li>수면 시간은 최소 6시간 이상은 확보하는 게 좋아요.</li>
+          <li>수면 시간은 6시간 이상 확보하는 게 좋아요.</li>
           <li>기상과 식사 시간을 수능 당일처럼 연습하세요.</li>
         </ul>
       </li>
@@ -763,7 +760,7 @@ if(location.protocol==='file:'||location.hostname.indexOf('github.io')>-1){
         <ul class="sn27-dots">
           <li>수험표와 신분증을 챙기고, 시험장 위치와 이동 경로를 미리 확인하세요.</li>
           <li>시험장 반입 금지 물품을 미리 확인하세요.</li>
-          <li>휴대전화, 스마트워치뿐만 아니라 <strong>올해부터는 스마트안경도 반입 금지</strong></li>
+          <li>휴대전화, 스마트워치뿐만 아니라 <strong>올해부터는 스마트안경도 반입 금지</strong>.</li>
         </ul>
       </li>
     </ol>
@@ -796,7 +793,7 @@ if(location.protocol==='file:'||location.hostname.indexOf('github.io')>-1){
     <div class="sn27-head">
       <p class="sn27-kicker">119 이송 지원 서비스</p>
       <h2 class="sn27-h2">거동 불편 수험생도<span class="sn27-br sn27-br--mo"></span> 꼼꼼하게 챙깁니다</h2>
-      <p class="sn27-lead">장애, 거동 불편으로 지원이 필요한 수험생의 이동편의를 지원하기 위해 119가 함께합니다.<span class="sn27-br sn27-br--web"></span> 광주권역 이동불편 수험생이라면 <strong>‘119 이송 지원 서비스’</strong>를 신청하세요.<span class="sn27-br sn27-br--web"></span> 시험 후 귀가까지 안전하게 책임집니다.</p>
+      <p class="sn27-lead">장애나 거동 불편으로 도움이 필요한 수험생의 이동 편의를 위해 119가 함께합니다.<span class="sn27-br sn27-br--web"></span> 광주권역 이동 불편 수험생이라면 <strong>‘119 이송 지원 서비스’</strong>를 신청하세요.<span class="sn27-br sn27-br--web"></span> 시험 후 귀가까지 안전하게 책임집니다.</p>
     </div>
     <div class="sn27-fig119">
       <img src="img/119.webp" width="600" height="220" loading="lazy" decoding="async" alt="119 구급차 옆에서 모자를 쓴 강아지 캐릭터가 손을 흔드는 모습">

@@ -1,0 +1,692 @@
+<!-- 모바일 좌우 패딩 16 -->
+<script>
+if(location.protocol==='file:'||location.hostname.indexOf('github.io')>-1){
+  var s=document.createElement('style');
+  s.textContent='body{margin:0}@media(max-width:700px){.contents_div{padding:0 16px}}@media(max-width:576px){.contents_div br{display:inline!important}}';
+  document.head.appendChild(s);
+}
+</script>
+<script>
+(function(){
+  try{
+    if(!document.querySelector('meta[name="viewport"]')){
+      var m=document.createElement('meta');
+      m.setAttribute('name','viewport');
+      m.setAttribute('content','width=device-width, initial-scale=1');
+      (document.head||document.getElementsByTagName('head')[0]||document.documentElement).appendChild(m);
+    }
+  }catch(e){}
+})();
+</script>
+<div class="contents_div">
+<style>
+@font-face{font-family:'Pretendard';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Thin.woff2') format('woff2');font-weight:100;font-display:swap}
+@font-face{font-family:'Pretendard';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraLight.woff2') format('woff2');font-weight:200;font-display:swap}
+@font-face{font-family:'Pretendard';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2') format('woff2');font-weight:300;font-display:swap}
+@font-face{font-family:'Pretendard';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Pretendard';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2') format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:'Pretendard';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2') format('woff2');font-weight:600;font-display:swap}
+@font-face{font-family:'Pretendard';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2') format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:'Pretendard';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraBold.woff2') format('woff2');font-weight:800;font-display:swap}
+@font-face{font-family:'Pretendard';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Black.woff2') format('woff2');font-weight:900;font-display:swap}
+@font-face{font-family:'Paperozi';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-1Thin.woff2') format('woff2');font-weight:100;font-display:swap}
+@font-face{font-family:'Paperozi';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-2ExtraLight.woff2') format('woff2');font-weight:200;font-display:swap}
+@font-face{font-family:'Paperozi';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-3Light.woff2') format('woff2');font-weight:300;font-display:swap}
+@font-face{font-family:'Paperozi';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Paperozi';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2') format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:'Paperozi';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2') format('woff2');font-weight:600;font-display:swap}
+@font-face{font-family:'Paperozi';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2') format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:'Paperozi';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');font-weight:800;font-display:swap}
+@font-face{font-family:'Paperozi';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-9Black.woff2') format('woff2');font-weight:900;font-display:swap}
+
+/* ===== 토큰 ===== */
+.contents_div .sn27-wrap{
+  max-width:800px; margin:0 auto;
+  container-type:inline-size;   /* h2 cqi 기준 */
+  /* Title */
+  --fs-h2:clamp(20px, min(23px + (100cqi - 388px) * 0.02185, 22px + (100cqi - 343px) * 0.02223, 20px + (100cqi - 318px) * 0.08), 32px); --fs-foot:19px; --fs-foot-em:36px; --fs-h3:21px;
+  /* Body */
+  --fs-body:17px; --fs-lead:16px; --fs-info:16px; --fs-cta:16px; --fs-arrow:17px;
+  --fs-nav:2.5cqi; --fs-kicker:15px; --fs-num:14px; --fs-tagcap:13.5px;
+  --fs-label:13px; --fw-label:700; --fs-check:11px; --fs-caption:11px; --fs-hash:12.5px;
+  /* 간격 */
+  --gut:clamp(22px, 6.25%, 50px);
+  --band:clamp(40px, calc(7.9% + 6.8px), 70px);
+  --card-py:30px; --card-px:28px;
+  --kick:32px; --lb-h:24px; --lb-px:11px;
+  --img-ratio:62.5%;
+  /* 색 — 히어로 이미지 추출 */
+  --c-blue:#3c5ae4;       /* 히어로 상단 */
+  --c-blue-2:#5770e3;     /* 히어로 하단 */
+  --c-blue-dk:#2e46c4;
+  --c-navy:#1d2a6b;
+  --c-ink:#2a3352;
+  --c-sky:#e9edfd;
+  --c-cream:#fff4d8;
+  --c-yellow:#f5b530;     /* 소매 */
+  --c-yellow-lt:#ffd56b;
+  --c-line:#d9def5;
+  --c-point:#ff6ac0;     /* 포인트 */
+  font-family:'Pretendard',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  font-size:var(--fs-body); line-height:1.6; letter-spacing:-0.02em;
+  color:var(--c-ink); word-break:keep-all; overflow-wrap:break-word;
+}
+.contents_div .sn27-wrap, .contents_div .sn27-wrap *,
+.contents_div .sn27-wrap *::before, .contents_div .sn27-wrap *::after{ box-sizing:border-box; }
+.contents_div .sn27-wrap :where(h1,h2,h3,p,ul,ol,li,dl,dt,dd,figure,table){ margin:0; padding:0; }
+.contents_div .sn27-wrap :where(ul,ol){ list-style:none; }
+.contents_div .sn27-wrap :where(img){ max-width:100%; display:block; border:0; }
+.contents_div .sn27-wrap :where(h1,h2,h3),
+.contents_div .sn27-foot-title{ font-family:'Paperozi','Pretendard',sans-serif; word-break:keep-all; }
+.contents_div .sn27-wrap a{ color:inherit; text-decoration:none; }
+
+
+/* 조건부 줄바꿈 */
+.contents_div .sn27-br::before{ content:'\A'; white-space:pre; }
+.contents_div .sn27-br--mo,
+.contents_div .sn27-br--mo-wide,
+.contents_div .sn27-br--m420{ display:none; }
+
+/* ===== 공통 섹션 ===== */
+.contents_div .sn27-sec{ width:100%; padding:var(--band) var(--gut); }
+.contents_div .sn27-sec:focus{ outline:none; }
+.contents_div .sn27-head{ text-align:center; margin-bottom:32px; }
+.contents_div .sn27-h1,
+.contents_div .sn27-h2{
+  font-size:var(--fs-h2); font-weight:800; line-height:1.35; letter-spacing:-0.01em; color:var(--c-navy);
+}
+.contents_div .sn27-kicker{
+  display:flex; align-items:center; width:fit-content; margin:0 auto 16px;
+  height:var(--kick); padding:0 18px; border-radius:999px;
+  background:var(--c-blue); color:#fff;
+  font-family:'Pretendard',sans-serif; font-size:var(--fs-kicker); font-weight:700;
+  line-height:1.2; letter-spacing:0.01em;
+}
+.contents_div .sn27-lead{ font-size:var(--fs-lead); line-height:1.6; margin-top:14px; color:var(--c-ink); }
+.contents_div .sn27-h3{ font-size:var(--fs-h3); font-weight:700; line-height:1.45; color:var(--c-navy); }
+.contents_div .sn27-on-blue .sn27-h1,
+.contents_div .sn27-on-blue .sn27-h2,
+.contents_div .sn27-on-blue .sn27-lead{ color:#fff; }
+.contents_div .sn27-on-blue .sn27-kicker{ background:#fff; color:var(--c-blue); }
+
+/* 반짝이 장식 */
+.contents_div .sn27-spark{ position:absolute; width:18px; height:18px; background:#fff;
+  clip-path:polygon(50% 0,60% 40%,100% 50%,60% 60%,50% 100%,40% 60%,0 50%,40% 40%); opacity:.9; pointer-events:none; }
+.contents_div .sn27-spark--a{ left:7%; top:30%; }
+.contents_div .sn27-spark--b{ right:8%; top:20%; transform:scale(.7); }
+.contents_div .sn27-spark--c{ left:8%; top:22%; }
+.contents_div .sn27-spark--d{ right:9%; top:46%; transform:scale(.7); }
+.contents_div .sn27-spark--e{ right:10%; top:26%; }
+.contents_div .sn27-spark--f{ right:17%; top:76%; transform:scale(.5); }
+
+/* ===== 히어로 + 앵커 내비 ===== */
+.contents_div .sn27-hero{
+  position:relative;
+  /* 히어로 원본 1600×1500 배경 실측 */
+  background:linear-gradient(180deg, #3b59e3 0%, #3c5ae4 13.3%, #415de3 26.7%, #4762e4 40%, #4c68e2 46.7%, #526ce3 53.3%, #566fe1 60%, #5770e3 63.3%, #5770e3 100%);
+}
+.contents_div .sn27-hero img{ width:100%; height:auto; }
+/* 내비 카드 — 히어로 원본 1600×1500 기준 1400×329, 바닥에서 192 */
+.contents_div .sn27-nav{
+  position:absolute; left:6.25%; right:6.25%; bottom:10.8%; height:21.9333%; z-index:1;
+}
+.contents_div .sn27-nav ul{
+  display:grid; grid-template-columns:repeat(4,1fr); height:100%;
+  background:linear-gradient(90deg, rgba(255,255,255,.92) 0%, rgba(255,255,255,.77) 100%);
+  border:1px solid var(--c-blue); border-radius:2.75cqi;
+}
+.contents_div .sn27-nav li{ position:relative; height:100%; }
+.contents_div .sn27-nav li + li::before{
+  content:''; position:absolute; left:0; top:0; bottom:0; width:1px; background:#c9d2f6;
+}
+.contents_div .sn27-nav-btn{
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4.5cqi;
+  width:100%; height:100%; padding:0 6px; border:0; background:none; cursor:pointer;
+  font-family:'Paperozi','Pretendard',sans-serif; font-size:var(--fs-nav); font-weight:800;
+  line-height:1.35; letter-spacing:normal; color:#2338a6;
+  word-break:keep-all; white-space:nowrap; text-align:center; -webkit-tap-highlight-color:transparent;
+  transition:color .2s;
+}
+.contents_div .sn27-nav-num{
+  flex:0 0 auto; display:flex; align-items:center; justify-content:center;
+  color:#2338a6; position:relative;
+  font-family:'Paperozi','Pretendard',sans-serif; font-size:calc(var(--fs-nav) * .8); font-weight:800; line-height:1; letter-spacing:0;
+  transition:color .2s;
+}
+.contents_div .sn27-nav-num::before{ content:'/'; }
+.contents_div .sn27-nav-num::after{
+  content:''; position:absolute; left:50%; top:calc(100% + 2.125cqi); width:7cqi; margin-left:-3.5cqi;
+  border-top:2px dotted #b9c4f3;
+}
+.contents_div .sn27-nav-btn:focus:not(:focus-visible){ outline:none; }
+.contents_div .sn27-nav-btn.is-on,
+.contents_div .sn27-nav-btn:active,
+.contents_div .sn27-nav-btn.is-on .sn27-nav-num,
+.contents_div .sn27-nav-btn:active .sn27-nav-num{ color:var(--c-navy); }
+
+/* ===== 인트로 ===== */
+.contents_div .sn27-intro{ position:relative; background:#5770e3; text-align:center; overflow:hidden; padding-top:0; }
+.contents_div .sn27-intro .sn27-lead{ margin-top:34px; font-weight:500; }
+.contents_div .sn27-intro .sn27-spark--d{ right:7.125%; }
+.contents_div .sn27-intro .sn27-spark--f{ right:15.125%; }
+
+/* ===== 1. 통합 후 첫 수능 ===== */
+.contents_div .sn27-s1{ background:var(--c-sky); }
+.contents_div .sn27-board{ display:grid; grid-template-columns:1fr 1.2fr; gap:16px; }
+.contents_div .sn27-board-total{
+  position:relative; display:flex; flex-direction:column; justify-content:space-between; gap:24px;
+  padding:var(--card-py) var(--card-px); border-radius:24px; background:var(--c-blue); color:#fff; overflow:hidden;
+}
+.contents_div .sn27-board-total .sn27-h3{ color:#fff; }
+.contents_div .sn27-board-num{ display:flex; flex-direction:column; align-items:flex-start; font-size:var(--fs-h3); font-weight:700; line-height:1.2; }
+.contents_div .sn27-board-num strong{
+  position:relative; display:inline-block; font-size:calc(var(--fs-h2) * 1.5); font-weight:900; letter-spacing:-0.03em; color:#fff;
+}
+.contents_div .sn27-board-num .sn27-badge{
+  display:inline-flex; align-items:center; height:var(--kick); margin-bottom:10px; padding:0 14px; border-radius:999px;
+  background:var(--c-point); color:#fff; font-size:var(--fs-kicker); font-weight:800; line-height:1;
+}
+.contents_div .sn27-board-num .sn27-spark{ left:100%; right:auto; top:calc(-.12em - 9px); margin-left:11px; width:16.2px; height:16.2px; }
+.contents_div .sn27-board-exam{ padding:var(--card-py) var(--card-px); border-radius:24px; background:#fff; border:1px solid var(--c-blue); }
+.contents_div .sn27-board-exam .sn27-h3{ margin-bottom:8px; }
+.contents_div .sn27-stat{
+  display:flex; align-items:baseline; justify-content:space-between; gap:12px;
+  padding:12px 0; border-bottom:1px dashed var(--c-line);
+}
+.contents_div .sn27-stat:last-child{ padding-bottom:0; border-bottom:0; }
+.contents_div .sn27-stat dt{ flex:0 0 auto; font-size:var(--fs-info); font-weight:600; color:#5b6485; line-height:1.4; }
+.contents_div .sn27-stat dd{ font-size:var(--fs-h3); font-weight:800; color:var(--c-blue); line-height:1.35; text-align:right; }
+
+/* ===== 2. 컨디션 관리 ===== */
+.contents_div .sn27-s2{ background:linear-gradient(180deg, #728cf3 0%, #5a77ed 100%); }
+.contents_div .sn27-tips{ display:grid; grid-template-columns:1fr; gap:16px; }
+.contents_div .sn27-tip{
+  overflow:hidden; border-radius:22px; border:1px solid rgba(255,255,255,.3);
+  background:linear-gradient(180deg,#fff 0%,#eef2fd 100%) padding-box;
+  box-shadow:0 10px 28px rgba(16,26,90,.22);
+}
+.contents_div .sn27-tip-head{ display:flex; align-items:center; gap:10px; padding:15.4px var(--card-px); background:linear-gradient(90deg,#24389f 0%,var(--c-blue-dk) 100%); }
+.contents_div .sn27-tip-head .sn27-h3{ color:#fff; }
+.contents_div .sn27-tip .sn27-dots{ padding:22px var(--card-px) var(--card-py); }
+.contents_div .sn27-num{
+  flex:0 0 auto; display:flex; align-items:center; justify-content:center;
+  width:calc(var(--kick) * .85); height:calc(var(--kick) * .85); border-radius:50%;
+  background:var(--c-point); color:#fff;
+  font-size:var(--fs-num); font-weight:800; line-height:1;
+}
+.contents_div .sn27-dots li{ position:relative; padding-left:14px; font-size:var(--fs-body); line-height:1.6; }
+.contents_div .sn27-dots li + li{ margin-top:8px; }
+.contents_div .sn27-dots li::before{
+  content:''; position:absolute; left:2px; top:.45em; width:2px; height:.7em; border-radius:999px; background:var(--c-blue);
+}
+.contents_div .sn27-note{ display:block; color:var(--c-blue); font-weight:600; }
+.contents_div .sn27-tips strong{ color:var(--c-blue); font-weight:700; background:linear-gradient(transparent 60%, var(--c-yellow-lt) 60%); }
+
+/* ===== 3. 만반의 준비 ===== */
+.contents_div .sn27-s3{ background:var(--c-cream); }
+.contents_div .sn27-checks{ border-top:2px solid var(--c-navy); border-bottom:2px solid var(--c-navy); }
+.contents_div .sn27-checks li{
+  display:grid; grid-template-columns:46px 30px 1fr; align-items:center; column-gap:22px;
+  padding:20px 6px; font-size:var(--fs-info);
+}
+.contents_div .sn27-checks li + li{ border-top:1px solid rgba(29,42,107,.14); }
+.contents_div .sn27-ck-no{
+  font-family:'Paperozi','Pretendard',sans-serif; font-size:calc(var(--fs-h3) * 1.45); font-weight:800;
+  line-height:1; letter-spacing:-0.02em; color:var(--c-blue);
+  white-space:nowrap; font-variant-numeric:tabular-nums;
+}
+.contents_div .sn27-ck-ic{ display:block; width:30px; height:30px; background:no-repeat center / contain; }
+.contents_div .sn27-ck-ic--check{ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233c5ae4' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='5.5' y='4' width='13' height='17' rx='2'/%3E%3Cpath d='M9.5 2.8h5v3h-5z'/%3E%3Cpath d='M9 13l2.2 2.2L15.2 11'/%3E%3C/svg%3E"); }
+.contents_div .sn27-ck-ic--meet{ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233c5ae4' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='9' cy='8' r='3'/%3E%3Cpath d='M3.5 20c0-3.2 2.4-5.6 5.5-5.6s5.5 2.4 5.5 5.6'/%3E%3Ccircle cx='17' cy='9' r='2.4'/%3E%3Cpath d='M16.5 14.4c2.6 0 4.2 2 4.2 4.8'/%3E%3C/svg%3E"); }
+.contents_div .sn27-ck-ic--aid{ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233c5ae4' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3l7 3v5.2c0 4.4-3 7.9-7 9.8-4-1.9-7-5.4-7-9.8V6z'/%3E%3Cpath d='M12 9v6M9 12h6'/%3E%3C/svg%3E"); }
+.contents_div .sn27-ck-ic--bus{ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233c5ae4' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='5' y='3' width='14' height='15' rx='3'/%3E%3Cpath d='M5 11h14M8 18v2.5M16 18v2.5M8.5 14.5h.01M15.5 14.5h.01'/%3E%3C/svg%3E"); }
+.contents_div .sn27-ck-ic--ear{ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233c5ae4' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 15v-3a8 8 0 0 1 16 0v3'/%3E%3Crect x='3' y='14' width='4' height='6.5' rx='1.6'/%3E%3Crect x='17' y='14' width='4' height='6.5' rx='1.6'/%3E%3C/svg%3E"); }
+.contents_div .sn27-nw{ white-space:nowrap; }
+.contents_div .sn27-ck-tx{ min-width:0; font-size:var(--fs-info); font-weight:500; line-height:1.6; color:var(--c-navy); }
+/* 주의 — 줄노트 */
+.contents_div .sn27-warn{
+  position:relative; max-width:560px; margin:56px auto 0; padding:47px 34px 63px;
+  background:var(--c-blue-dk); color:#fff;
+  box-shadow:0 14px 20px -14px rgba(16,26,90,.55);
+}
+.contents_div .sn27-warn::before{
+  content:''; position:absolute; left:50%; top:-12px; width:96px; height:24px; margin-left:-48px;
+  background:rgba(255,255,255,.6); box-shadow:0 1px 2px rgba(16,26,90,.15); transform:rotate(-3deg);
+}
+.contents_div .sn27-warn .sn27-h3{ color:#fff; display:flex; align-items:center; justify-content:center; gap:10px; margin-bottom:16px; }
+.contents_div .sn27-warn .sn27-h3::before{
+  content:'!'; flex:0 0 auto; display:flex; align-items:center; justify-content:center;
+  width:calc(var(--kick) * .85); height:calc(var(--kick) * .85); border-radius:50%; background:var(--c-point); color:#fff;
+  font-family:'Pretendard',sans-serif; font-size:var(--fs-num); font-weight:800; line-height:1;
+}
+.contents_div .sn27-warn ul{ display:grid; gap:8px; width:fit-content; max-width:100%; margin:0 auto; }
+.contents_div .sn27-warn li{
+  position:relative; padding-left:calc(var(--lb-h) * .5 + 12px);
+  font-size:var(--fs-body); font-weight:600; line-height:1.6;
+}
+.contents_div .sn27-warn li::after{
+  content:''; position:absolute; left:3px; top:calc(.8em - var(--lb-h) * .32);
+  width:calc(var(--lb-h) * .28); height:calc(var(--lb-h) * .5);
+  border:solid var(--c-point); border-width:0 2.5px 2.5px 0; transform:rotate(45deg);
+}
+.contents_div .sn27-warn .sn27-note{ display:inline; color:var(--c-yellow-lt); font-weight:600; }
+
+/* ===== 4. 119 이송 지원 ===== */
+.contents_div .sn27-s4{ background:var(--c-sky); }
+.contents_div .sn27-s4 .sn27-lead strong{ color:var(--c-blue); font-weight:700; }
+.contents_div .sn27-fig119{
+  position:relative; z-index:0; width:85.7143%; max-width:600px; margin:0 auto -12px;
+  aspect-ratio:600 / 220; overflow:hidden; background:none;
+}
+.contents_div .sn27-fig119 img{ width:100%; height:100%; object-fit:cover; object-position:center; }
+.contents_div .sn27-card{ position:relative; z-index:1; padding:var(--card-py) var(--card-px); border-radius:24px; background:#fff; border:1px solid var(--c-blue); }
+.contents_div .sn27-box > .sn27-row{ display:flex; align-items:flex-start; gap:12px; padding:14px 0; border-bottom:1px solid var(--c-line); }
+.contents_div .sn27-box > .sn27-row:first-child{ padding-top:0; }
+.contents_div .sn27-box > .sn27-row:last-child{ padding-bottom:0; border-bottom:0; }
+.contents_div .sn27-lb{
+  flex:0 0 auto; display:inline-flex; align-items:center; justify-content:center;
+  box-sizing:border-box; padding:0 var(--lb-px); height:var(--lb-h); margin-top:calc((1.5em - var(--lb-h)) / 2);
+  border-radius:999px; background:var(--c-blue); color:#fff;
+  font-size:var(--fs-label); font-weight:var(--fw-label); line-height:1; white-space:nowrap;
+}
+.contents_div .sn27-box dd{ flex:1 1 auto; min-width:0; font-size:var(--fs-info); line-height:1.5; font-weight:600; color:var(--c-navy); }
+.contents_div .sn27-box > .sn27-row--tel{ display:grid; grid-template-columns:auto 1fr; column-gap:12px; align-items:start; }
+.contents_div .sn27-row--tel > dd{ display:contents; }
+.contents_div .sn27-tels{ grid-column:1 / -1; display:grid; grid-template-columns:repeat(5,1fr); gap:8px; margin-top:12px; }
+.contents_div .sn27-tels li{
+  display:flex; flex-direction:column; align-items:center; gap:2px; text-align:center;
+  position:relative; padding:12px 4px;
+  font-size:var(--fs-info); line-height:1.4;
+}
+.contents_div .sn27-tels li + li::before{
+  content:''; position:absolute; left:-4px; top:14px; bottom:14px; width:1px; background:var(--c-line);
+}
+.contents_div .sn27-tels b{ font-weight:600; color:#5b6485; }
+.contents_div .sn27-tels a{ font-weight:800; color:var(--c-blue); white-space:nowrap; }
+
+/* ===== 푸터 ===== */
+.contents_div .sn27-foot{ position:relative; background:#25358f; text-align:center; overflow:hidden; }
+.contents_div .sn27-foot-title{
+  font-size:var(--fs-foot); font-weight:400; line-height:1.6; letter-spacing:-0.01em; color:#fff;
+}
+.contents_div .sn27-foot-title em{ display:inline-block; margin-top:4px; font-size:var(--fs-foot-em); font-weight:800; font-style:normal; line-height:1.4; color:var(--c-yellow-lt); }
+.contents_div .sn27-tags{ display:flex; flex-wrap:wrap; justify-content:center; gap:8px; margin-top:32px; }
+.contents_div .sn27-tags li{
+  padding:6px 13px; border-radius:999px; border:1px solid rgba(255,255,255,.3); background:rgba(255,255,255,.06);
+  font-size:var(--fs-hash); font-weight:700; line-height:1.35; color:rgba(255,255,255,.72);
+}
+
+/* ===== hover ===== */
+@media (hover:hover) and (pointer:fine){
+  .contents_div .sn27-nav-btn:hover,
+  .contents_div .sn27-nav-btn:hover .sn27-nav-num{ color:var(--c-navy); }
+  .contents_div .sn27-tels a:hover{ text-decoration:underline; }
+}
+
+/* ===== 반응형 ===== */
+@media (max-width:767px){
+  .contents_div .sn27-tels{ grid-template-columns:1fr; gap:0; padding:2px 14px; border-radius:12px; background:var(--c-sky); }
+  .contents_div .sn27-tels li{ flex-direction:row; justify-content:space-between; padding:10px 0; }
+  .contents_div .sn27-tels a{ font-variant-numeric:tabular-nums; }
+  .contents_div .sn27-tels li + li::before{ left:0; right:0; top:0; bottom:auto; width:auto; height:1px; background:rgba(60,90,228,.16); }
+}
+@media (max-width:600px){
+  .contents_div .sn27-wrap{
+    --fs-foot:clamp(13.5px, calc(13.5px + (100vw - 375px) * 0.0143), 14px);
+    --fs-foot-em:clamp(19px, calc(19px + (100vw - 375px) * 0.1143), 23px);
+    --fs-h3:clamp(16px, calc(16px + (100vw - 375px) * 0.0286), 17px);
+    --fs-body:clamp(13.5px, calc(13.5px + (100vw - 375px) * 0.0143), 14px);
+    --fs-lead:var(--fs-body); --fs-info:var(--fs-body); --fs-cta:var(--fs-body);
+    --fs-arrow:15px; --fs-nav:13.5px; --fs-kicker:11.5px; --fs-num:10px; --fs-tagcap:10px;
+    --fs-label:10px; --fw-label:400; --fs-check:10px; --fs-caption:10px;
+    --fs-hash:clamp(10.5px, calc(10.5px + (100vw - 375px) * 0.0143), 11px);
+    --gut:22px;
+    --card-py:22px; --card-px:17px;
+    --kick:22px; --lb-h:17px; --lb-px:7px;
+    --img-ratio:75%;
+  }
+  .contents_div .sn27-br--web{ display:none; }
+  .contents_div .sn27-br--mo,
+  .contents_div .sn27-br--mo-wide{ display:inline; }
+  .contents_div .sn27-h1,
+  .contents_div .sn27-h2{ line-height:1.4; }
+  .contents_div .sn27-h3{ line-height:1.5; }
+  .contents_div .sn27-kicker{ padding:0 11px; margin-bottom:10px; line-height:1; font-weight:400; }
+  .contents_div .sn27-on-blue .sn27-kicker{ color:#1f2f8a; }
+  .contents_div .sn27-head{ margin-bottom:22px; }
+  .contents_div .sn27-lead{ margin-top:10px; }
+  .contents_div .sn27-intro .sn27-lead{ margin-top:22px; padding:0 4%; }
+  .contents_div .sn27-spark{ width:12px; height:12px; }
+  .contents_div .sn27-intro .sn27-spark--c{ top:calc(22% - 15px); }
+  .contents_div .sn27-intro .sn27-spark--d{ right:3%; }
+  .contents_div .sn27-intro .sn27-spark--f{ top:auto; bottom:calc(var(--band) * .4); }
+  .contents_div .sn27-nav ul{ border-radius:min(12px, 3.55cqi); }
+  .contents_div .sn27-nav-btn{ gap:min(9px, 2.66cqi); padding:0 2px; line-height:1.2; }
+  .contents_div .sn27-nav-num{ font-size:max(10px, calc(var(--fs-nav) * .8)); }
+  .contents_div .sn27-nav-num::after{ display:none; }
+  .contents_div .sn27-board{ grid-template-columns:1fr; gap:10px; }
+  .contents_div .sn27-board-total{ gap:14px; border-radius:16px; }
+  .contents_div .sn27-board-num{ flex-direction:row; align-items:flex-end; column-gap:12px; }
+  .contents_div .sn27-board-num .sn27-badge{ order:1; margin-bottom:4px; padding:0 10px; }
+  .contents_div .sn27-board-num .sn27-spark{ top:calc(-.08em - 5.5px); margin-left:7.5px; width:10.8px; height:10.8px; }
+  .contents_div .sn27-board-exam{ border-radius:16px; }
+  .contents_div .sn27-board-exam .sn27-h3{ margin-bottom:4px; }
+  .contents_div .sn27-stat{ gap:9px; padding:10px 0; }
+  .contents_div .sn27-tips{ gap:14px; }
+  .contents_div .sn27-tip{ border-radius:16px; box-shadow:0 6px 18px rgba(16,26,90,.2); }
+  .contents_div .sn27-tip-head{ gap:8px; padding:10.4px var(--card-px); }
+  .contents_div .sn27-tip .sn27-dots{ padding:16px var(--card-px) var(--card-py); }
+  .contents_div .sn27-dots li{ padding-left:12px; }
+  .contents_div .sn27-dots li + li{ margin-top:6px; }
+  .contents_div .sn27-dots li::before{ width:1.5px; }
+  .contents_div .sn27-checks{ border-top-width:1.5px; border-bottom-width:1.5px; }
+  .contents_div .sn27-checks li{ grid-template-columns:31px 1fr; column-gap:12px; padding:13px 2px; }
+  .contents_div .sn27-ck-ic{ display:none; }
+  .contents_div .sn27-nw{ white-space:normal; }
+  .contents_div .sn27-warn{ margin-top:40px; padding:35px 18px 45px; }
+  .contents_div .sn27-warn::before{ top:-9px; width:72px; height:18px; margin-left:-36px; }
+  .contents_div .sn27-warn .sn27-h3{ gap:7px; margin-bottom:12px; }
+  .contents_div .sn27-warn ul{ gap:6px; }
+  .contents_div .sn27-warn li{ padding-left:calc(var(--lb-h) * .5 + 10px); }
+  .contents_div .sn27-warn li::after{ border-width:0 2px 2px 0; }
+  .contents_div .sn27-fig119{ margin-bottom:-1.7143%; }
+  .contents_div .sn27-card{ border-radius:16px; }
+  .contents_div .sn27-box > .sn27-row{ gap:9px; padding:11px 0; }
+  .contents_div .sn27-foot-title{ line-height:1.62; letter-spacing:-0.03em; white-space:nowrap; }
+  .contents_div .sn27-foot-title em{ white-space:normal; }
+  .contents_div .sn27-tags{ gap:4px 10px; margin-top:22px; }
+  .contents_div .sn27-tags li{ padding:0; border:0; border-radius:0; background:none; font-weight:400; color:#121a4a; }
+}
+@media (max-width:480px){
+  .contents_div .sn27-wrap{
+    --fs-nav:min(clamp(13px, calc(13px + (100vw - 375px) * 0.0143), 13.5px), 3.85cqi);
+    --gut:15px;
+  }
+  .contents_div .sn27-intro .sn27-lead{ font-weight:400; }
+}
+@media (max-width:420px){
+  .contents_div .sn27-wrap{
+    --band:40px;
+    --card-py:19px; --card-px:14px;
+  }
+  .contents_div .sn27-warn{ padding-bottom:38px; }
+  .contents_div .sn27-tags{ margin-top:32px; }
+  .contents_div .sn27-br--mo-wide{ display:none; }
+  .contents_div .sn27-br--m420{ display:inline; }
+}
+</style>
+
+<article class="sn27-wrap">
+  <!-- 히어로 -->
+  <div class="sn27-hero">
+    <img src="img/히어로.webp" width="1600" height="1500" fetchpriority="high" loading="eager" decoding="async" alt="최고의 컨디션으로 최선을! 수험생 여러분을 응원합니다! 파란 배경에 엄지를 치켜든 두 손과 펼친 책, 시험지가 그려진 대표 이미지">
+    <!-- 앵커 내비 -->
+    <nav class="sn27-nav" aria-label="본문 바로가기">
+    <ul>
+      <li><button type="button" class="sn27-nav-btn" data-go="sn27-sec1"><span class="sn27-nav-num">01</span><span>통합<br>첫 수능</span></button></li>
+      <li><button type="button" class="sn27-nav-btn" data-go="sn27-sec2"><span class="sn27-nav-num">02</span><span>컨디션<br>관리</span></button></li>
+      <li><button type="button" class="sn27-nav-btn" data-go="sn27-sec3"><span class="sn27-nav-num">03</span><span>만반의<br>준비</span></button></li>
+      <li><button type="button" class="sn27-nav-btn" data-go="sn27-sec4"><span class="sn27-nav-num">04</span><span>119<br>이송 지원</span></button></li>
+    </ul>
+    </nav>
+  </div>
+
+  <!-- 인트로 -->
+  <section class="sn27-sec sn27-intro sn27-on-blue">
+    <span class="sn27-spark sn27-spark--c" aria-hidden="true"></span>
+    <span class="sn27-spark sn27-spark--d" aria-hidden="true"></span>
+    <span class="sn27-spark sn27-spark--f" aria-hidden="true"></span>
+    <h1 class="sn27-h1">달려온 시간만큼 빛날 순간</h1>
+    <p class="sn27-lead">2027학년도 대학수학능력시험이 얼마 남지 않았습니다.<span class="sn27-br sn27-br--web"></span> 여기까지 달려온 것만으로도 이미 충분히 잘해 왔어요.<span class="sn27-br sn27-br--web"></span> 이제 남은 열흘은 잘 자고, 잘 먹고, 마음을 가라앉히는 시간.<span class="sn27-br sn27-br--web"></span> 수험생 여러분의 마지막 컨디션 관리, 모두의전남광주와 함께 챙겨보세요.</p>
+  </section>
+
+  <!-- 1. 통합 후 첫 수능 -->
+  <section class="sn27-sec sn27-s1" id="sn27-sec1" tabindex="-1">
+    <div class="sn27-head">
+      <p class="sn27-kicker">2027 수능 한눈에</p>
+      <h2 class="sn27-h2">통합 후 첫 수능, 전남광주에서는</h2>
+      <p class="sn27-lead">올해 전남광주통합특별시에서는<span class="sn27-br sn27-br--m420"></span> 몇 명의 수험생이 수능을 볼까요?</p>
+    </div>
+    <div class="sn27-board">
+      <div class="sn27-board-total">
+        <h3 class="sn27-h3">2027 전남광주 수험생</h3>
+        <p class="sn27-board-num"><span class="sn27-badge">응시</span> <strong>3만 1704명<span class="sn27-spark" aria-hidden="true"></span></strong></p>
+      </div>
+      <div class="sn27-board-exam">
+      <h3 class="sn27-h3">시험지구‧시험실</h3>
+      <dl class="sn27-stats">
+        <div class="sn27-stat"><dt>시험지구</dt><dd>광주 1개·전남 7개</dd></div>
+        <div class="sn27-stat"><dt>시험장</dt><dd>86개</dd></div>
+        <div class="sn27-stat"><dt>시험실</dt><dd>1196개 운영</dd></div>
+        <div class="sn27-stat"><dt>시험관리 인력</dt><dd>6530명 배치</dd></div>
+      </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. 마지막까지 완벽하게 -->
+  <section class="sn27-sec sn27-s2 sn27-on-blue" id="sn27-sec2" tabindex="-1">
+    <div class="sn27-head">
+      <h2 class="sn27-h2"><span class="sn27-kicker">마지막까지 완벽하게!</span> 굿 컨디션으로 좋은 결과를</h2>
+    </div>
+    <ol class="sn27-tips">
+      <li class="sn27-tip">
+        <div class="sn27-tip-head"><span class="sn27-num" aria-hidden="true">1</span><h3 class="sn27-h3">기상 시간 동기화</h3></div>
+        <ul class="sn27-dots">
+          <li>수능 시간표에 맞춰 기상 시간을 미리 조정하세요(1주일 전).</li>
+          <li>공부 시간을 늘리려고 취침을 늦추면 수면 부족이 쌓여 집중력이 떨어져요.</li>
+          <li>수면 시간은 최소 6시간 이상은 확보하는 게 좋아요.</li>
+          <li>기상과 식사 시간을 수능 당일처럼 연습하세요.</li>
+        </ul>
+      </li>
+      <li class="sn27-tip">
+        <div class="sn27-tip-head"><span class="sn27-num" aria-hidden="true">2</span><h3 class="sn27-h3">익숙한 식단 유지</h3></div>
+        <ul class="sn27-dots">
+          <li>평소 먹던 음식을 일정한 시간에 드세요.</li>
+          <li>평소 안 먹던 보약·건강기능식품·약을 새로 먹지 마세요.</li>
+          <li>야식과 찬 음식, 카페인·에너지음료는 피하세요.</li>
+        </ul>
+      </li>
+      <li class="sn27-tip">
+        <div class="sn27-tip-head"><span class="sn27-num" aria-hidden="true">3</span><h3 class="sn27-h3">건강관리는 기본</h3></div>
+        <ul class="sn27-dots">
+          <li>일교차가 큰 시기라 손 씻기, 마스크, 충분한 수분 섭취가 기본이에요.</li>
+          <li>독감 접종은 수능 1~2주 전 하는 게 좋아요.</li>
+          <li>발열, 심한 기침, 근육통이 있으면 참지 말고 병원에 가세요.</li>
+          <li>기저질환이 있으면 주치의와 상의해 시험장 배려 신청 등을 미리 확인하세요.</li>
+        </ul>
+      </li>
+      <li class="sn27-tip">
+        <div class="sn27-tip-head"><span class="sn27-num" aria-hidden="true">4</span><h3 class="sn27-h3">불안과 긴장은 저 멀리</h3></div>
+        <ul class="sn27-dots">
+          <li>긴장은 억지로 없애기보다 호흡으로 가라앉히는 게 좋아요.<span class="sn27-note">(4초 들이마시고 6초 내쉬는 호흡을 10회씩 반복)</span></li>
+          <li>복식호흡, 명상, 가벼운 스트레칭도 도움이 돼요.</li>
+          <li>불안과 불면이 심하다면 전문가와 상담하세요.</li>
+        </ul>
+      </li>
+      <li class="sn27-tip">
+        <div class="sn27-tip-head"><span class="sn27-num" aria-hidden="true">5</span><h3 class="sn27-h3">오답 위주로 정리를</h3></div>
+        <ul class="sn27-dots">
+          <li>새로운 내용보다 요약노트와 오답노트로 기존 내용을 정리하세요.</li>
+          <li>수능 시간표에 맞춰 문제를 풀며 시간 배분과 집중력을 점검하세요.</li>
+          <li>어려운 문제에 시간을 쓰기보다 풀 수 있는 문항부터 정확하게 푸는 게 좋아요.</li>
+        </ul>
+      </li>
+      <li class="sn27-tip">
+        <div class="sn27-tip-head"><span class="sn27-num" aria-hidden="true">6</span><h3 class="sn27-h3">최신 규정 미리 체크</h3></div>
+        <ul class="sn27-dots">
+          <li>수험표와 신분증을 챙기고, 시험장 위치와 이동 경로를 미리 확인하세요.</li>
+          <li>시험장 반입 금지 물품을 미리 확인하세요.</li>
+          <li>휴대전화, 스마트워치뿐만 아니라 <strong>올해부터는 스마트안경도 반입 금지</strong></li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+
+  <!-- 3. 만반의 준비 -->
+  <section class="sn27-sec sn27-s3" id="sn27-sec3" tabindex="-1">
+    <div class="sn27-head">
+      <p class="sn27-kicker">안전한 시험 지원</p>
+      <h2 class="sn27-h2">전남광주통합특별시도<br>만반의 준비 중!</h2>
+    </div>
+    <ul class="sn27-checks">
+      <li><span class="sn27-ck-no" aria-hidden="true">01</span><span class="sn27-ck-ic sn27-ck-ic--check" aria-hidden="true"></span><span class="sn27-ck-tx">모든 시험장의 안전과 난방·조명, 방송·음향 시설, 시험편의시설 등 점검</span></li>
+      <li><span class="sn27-ck-no" aria-hidden="true">02</span><span class="sn27-ck-ic sn27-ck-ic--meet" aria-hidden="true"></span><span class="sn27-ck-tx">시험장 책임자 회의를 열어 운영 계획을 최종 확인</span></li>
+      <li><span class="sn27-ck-no" aria-hidden="true">03</span><span class="sn27-ck-ic sn27-ck-ic--aid" aria-hidden="true"></span><span class="sn27-ck-tx">소방·경찰·의료기관과 비상 대응 체계 완성</span></li>
+      <li><span class="sn27-ck-no" aria-hidden="true">04</span><span class="sn27-ck-ic sn27-ck-ic--bus" aria-hidden="true"></span><span class="sn27-ck-tx">관계 기관에 시험 당일 출근 시간 조정, 대중교통 증편, 도서지역 수험생 수송, <span class="sn27-nw">시험장 주변 교통·소음 관리 요청</span></span></li>
+      <li><span class="sn27-ck-no" aria-hidden="true">05</span><span class="sn27-ck-ic sn27-ck-ic--ear" aria-hidden="true"></span><span class="sn27-ck-tx">영어 듣기평가 시간인 <time datetime="2026-11-19T13:05">오후 1시 5분</time>부터<span class="sn27-br sn27-br--mo"></span> <time datetime="2026-11-19T13:40">1시 40분</time>까지 항공기 이착륙과 <span class="sn27-nw">차량 경적 제한에도 협조 요청</span></span></li>
+    </ul>
+    <div class="sn27-warn">
+      <h3 class="sn27-h3">꼭 주의하세요!</h3>
+      <ul>
+        <li>올해부터 수험표 뒷면에 공식 가채점표 제공<span class="sn27-note">(별도 가채점표 사용 금지)</span></li>
+        <li>4교시 한국사에 응시하지 않으면 수능 성적 전체 무효 처리</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 4. 119 이송 지원 -->
+  <section class="sn27-sec sn27-s4" id="sn27-sec4" tabindex="-1">
+    <div class="sn27-head">
+      <p class="sn27-kicker">119 이송 지원 서비스</p>
+      <h2 class="sn27-h2">거동 불편 수험생도<span class="sn27-br sn27-br--mo"></span> 꼼꼼하게 챙깁니다</h2>
+      <p class="sn27-lead">장애, 거동 불편으로 지원이 필요한 수험생의 이동편의를 지원하기 위해 119가 함께합니다.<span class="sn27-br sn27-br--web"></span> 광주권역 이동불편 수험생이라면 <strong>‘119 이송 지원 서비스’</strong>를 신청하세요.<span class="sn27-br sn27-br--web"></span> 시험 후 귀가까지 안전하게 책임집니다.</p>
+    </div>
+    <div class="sn27-fig119">
+      <img src="img/119.webp" width="600" height="220" loading="lazy" decoding="async" alt="119 구급차 옆에서 모자를 쓴 강아지 캐릭터가 손을 흔드는 모습">
+    </div>
+    <div class="sn27-card">
+      <dl class="sn27-box">
+        <div class="sn27-row">
+          <dt class="sn27-lb">일시</dt>
+          <dd><time datetime="2026-11-19T06:00">2026.11.19.(목) 06:00</time>~</dd>
+        </div>
+        <div class="sn27-row">
+          <dt class="sn27-lb">신청</dt>
+          <dd><time datetime="2026-11-18">2026.11.18.(수)</time>까지</dd>
+        </div>
+        <div class="sn27-row sn27-row--tel">
+          <dt class="sn27-lb">신청방법</dt>
+          <dd>인근 소방서에 전화 접수
+            <ul class="sn27-tels">
+              <li><b>동부소방서</b><a href="tel:062-613-8472" aria-label="동부소방서 전화 062-613-8472">613-8472~3</a></li>
+              <li><b>서부소방서</b><a href="tel:062-613-8572" aria-label="서부소방서 전화 062-613-8572">613-8572~3</a></li>
+              <li><b>남부소방서</b><a href="tel:062-613-8672" aria-label="남부소방서 전화 062-613-8672">613-8672~3</a></li>
+              <li><b>북부소방서</b><a href="tel:062-613-8772" aria-label="북부소방서 전화 062-613-8772">613-8772~3</a></li>
+              <li><b>광산소방서</b><a href="tel:062-613-8872" aria-label="광산소방서 전화 062-613-8872">613-8872~3</a></li>
+            </ul>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- 푸터 -->
+  <footer class="sn27-sec sn27-foot sn27-on-blue">
+    <p class="sn27-foot-title">지금까지 꿈을 위해 열심히 달려온 수험생들이<br>최고의 컨디션으로 최선의 결과를 낼 수 있기를<br><em>모두의전남광주가 응원할게요!</em></p>
+    <ul class="sn27-tags" aria-label="관련 태그">
+      <li>#2027수능</li>
+      <li>#대학수학능력시험</li>
+      <li>#수험생응원</li>
+      <li>#수능컨디션관리</li>
+      <li>#수능반입금지물품</li>
+      <li>#수능가채점표</li>
+      <li>#119이송지원서비스</li>
+      <li>#수능시험장</li>
+      <li>#전남광주통합특별시</li>
+      <li>#모두의전남광주</li>
+    </ul>
+  </footer>
+</article>
+
+<script>
+(function(){
+  var root = document.querySelector('.contents_div');
+  if(!root) return;
+  var btns = root.querySelectorAll('.sn27-nav-btn');
+  var secs = [];
+  btns.forEach(function(btn){
+    var t = root.querySelector('#' + btn.getAttribute('data-go'));
+    if(!t) return;
+    secs.push({ btn:btn, sec:t });
+    btn.addEventListener('click', function(){
+      var y = t.getBoundingClientRect().top + (window.pageYOffset || document.documentElement.scrollTop);
+      window.scrollTo({ top:y, behavior:'smooth' });
+      try{ t.focus({ preventScroll:true }); }catch(e){}
+    });
+  });
+  if(!('IntersectionObserver' in window) || !secs.length) return;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(!en.isIntersecting) return;
+      secs.forEach(function(s){ s.btn.classList.toggle('is-on', s.sec === en.target); });
+    });
+  }, { rootMargin:'-45% 0px -50% 0px' });
+  secs.forEach(function(s){ io.observe(s.sec); });
+})();
+</script>
+<script>
+(function () {
+  var cs = document.currentScript;
+  var root = (cs && cs.closest) ? cs.closest('.contents_div') : null;
+  if (!root) root = document.querySelector('.contents_div');
+  if (!root) return;
+  var wrap = root.querySelector('.sn27-wrap');
+  if (!wrap) return;
+
+  function readLS(el) {
+    var v = window.getComputedStyle(el).letterSpacing;
+    return v === 'normal' ? 0 : (parseFloat(v) || 0);
+  }
+
+  function balanceLabels() {
+    var boxes = wrap.querySelectorAll('.sn27-box');
+    for (var b = 0; b < boxes.length; b++) {
+      var lbs = boxes[b].querySelectorAll('.sn27-lb');
+      if (lbs.length < 2) continue;
+      var items = [], i, lb, sp, target = 0;
+      for (i = 0; i < lbs.length; i++) {
+        lb = lbs[i];
+        sp = lb.firstElementChild;
+        if (!sp || !sp.hasAttribute('data-fit')) {
+          sp = document.createElement('span');
+          sp.setAttribute('data-fit', '');
+          sp.style.display = 'inline-block';
+          sp.textContent = (lb.textContent || '').replace(/^\s+|\s+$/g, '');
+          lb.textContent = '';
+          lb.appendChild(sp);
+        }
+        sp.style.letterSpacing = '';
+        sp.style.marginRight = '';
+        items.push({ sp: sp, len: sp.textContent.length, ls: readLS(lb) });
+      }
+      for (i = 0; i < items.length; i++) {
+        items[i].run = items[i].sp.getBoundingClientRect().width - items[i].ls;
+        if (items[i].run > target) target = items[i].run;
+      }
+      for (i = 0; i < items.length; i++) {
+        if (items[i].len < 2) continue;
+        var ls = items[i].ls + (target - items[i].run) / (items[i].len - 1);
+        items[i].sp.style.letterSpacing = ls.toFixed(3) + 'px';
+        items[i].sp.style.marginRight = (-ls).toFixed(3) + 'px';
+      }
+    }
+  }
+
+  balanceLabels();
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(balanceLabels)['catch'](function () {});
+  }
+  if (window.ResizeObserver) {
+    var rt, lastW = 0;
+    new ResizeObserver(function (entries) {
+      var w = Math.round(entries[0].contentRect.width);
+      if (w === lastW) return;
+      lastW = w;
+      clearTimeout(rt);
+      rt = setTimeout(balanceLabels, 150);
+    }).observe(wrap);
+  }
+})();
+</script>
+</div>
